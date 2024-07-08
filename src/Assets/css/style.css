@@ -1,0 +1,929 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body html
+{
+    font-family: 'Courier New', Courier, monospace;
+    height: 100%;
+    width: 100%;
+}
+
+/* nav css */
+.nav
+{
+    height:100px;
+    width: 100%;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:0vw 5vw;
+    /* gap: 4vw; */
+    /* position: relative; */
+    
+}
+
+.nav .logo img
+{
+    height:4vw;
+}
+.nav .links ul
+ {
+    display: flex;
+    list-style: none;
+    gap:2.5vw;
+
+ }
+.nav .links ul li a{
+    text-decoration: none;
+    color: #808080;
+    font-size:1.5vw;
+    font-weight:bold;
+  
+ }
+
+ .nav .links ul li a.active
+ {
+     color: #d94f29;
+ }
+
+.nav .links ul li a:hover
+ {
+    color:#dd3203;
+ }
+ 
+
+.nav .btn
+{
+font-size:1.8vw;
+padding: 1vw 2vw;
+border: none;
+border-radius:10px;
+background-color: #d94f29;
+color: #FFFF;
+}
+
+.nav i
+{
+    display:none;
+}
+
+@media (max-width:600px) {
+
+.nav
+{
+    height:90px;
+    
+
+}
+    
+.nav .logo img
+{
+    height:6vw;
+}
+
+.nav .links ul
+    {
+        display: none;
+    }
+.nav i
+{
+    display:block;
+}
+.nav .btn
+    {
+        font-size:4.5vw;
+        /* display: none; */
+
+    }
+
+
+
+}
+/* nav css  end */
+/* =======================
+=========================== */
+
+
+/* Baner css */
+.baner
+{
+    background: linear-gradient(0deg,#ac502e,#fff);
+    display: flex;
+    width: 100%;
+    height:85vh;
+    
+}
+
+.baner_contant
+ { 
+    height: 100%;
+    width: 40%;
+    padding:12vw 0vw 0vw 9vw;
+    
+}
+
+.baner h1{
+    font-size:3.5vw;
+    line-height: 4vw;
+
+}
+.baner p{
+    font-size:1.3vw;
+    margin:1vw 0vw 2vw 0vw;
+
+}
+.baner_img 
+{
+    height: 100%;
+    width: 60%;
+    /* background-color: #d94f29; */
+    background-image: url('../img/baner.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+    
+}
+
+
+
+.baner_contant .btn
+{
+    font-size:1.8vw;
+    padding: 1vw 2vw;
+    border: none;
+    border-radius:10px;
+    color: #FFFF;
+    background-color: #d94f29;  
+     
+}
+
+
+@media (max-width:600px) {
+    .baner
+    {  
+        
+        flex-direction: column;
+
+    }
+    
+.baner_contant
+ { 
+    height:100%;
+    width:100%;
+    padding-top:20vw;
+
+    
+
+}
+
+.baner h1{
+    font-size:7vw;
+    line-height:8vw;
+
+}
+.baner p{
+    font-size:4.5vw;
+    margin:4vw 0vw 4vw 0vw;
+
+}
+
+.baner_contant .btn
+{
+    font-size:6vw;
+    padding: 1vw 2vw;
+    border: none;
+    border-radius:10px;
+    background-color: #d94f29;
+    color: #FFFF;  
+    margin-bottom:5px;
+     
+}
+
+.baner_img 
+{
+    height:100%;
+    width: 100%;
+}
+}
+
+
+
+
+.Adds
+{
+    height:auto;
+    width:100%;
+    background-color:black;
+    
+    
+}
+
+.Adds .Add_hedimg
+{
+    font-size:1.5vw;
+    text-align: center;
+    color: #f5e2c8;
+    padding: 5vw 10vw 2vw 10vw;
+}
+
+.Adds .Add_img
+{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom:5vw;
+}
+
+
+
+
+@media (max-width:600px) {
+
+    .Adds .Add_hedimg
+    {
+        font-size:3vw;
+        text-align: center;
+        color: white;
+        
+    }
+
+
+
+
+.Adds .Add_img
+    {
+        flex-direction: column;
+    
+    }
+}
+ /*============ Baner css end ========*/
+    
+
+
+
+/* rate css */
+.rate
+{
+    height:auto;
+    width: 100%;
+    background-color:#FFFF;
+    
+}
+
+.rate .rate_heading
+{   
+    font-size: 1.5vw;
+    text-align: center;
+    padding:5vw 20vw 2vw 20vw;
+}
+
+.rate .rate_img
+{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center; 
+   flex-wrap: wrap;
+   padding-bottom: 5vw;
+}
+
+
+@media (max-width:600px) {
+
+
+.rate .rate_heading
+{   
+        font-size:3vw;
+        text-align: center;
+        padding:5vw 20vw 2vw 20vw;
+}
+
+.rate_img
+{
+    flex-direction: column;
+}
+}
+ 
+/*============ rate css  end ========*/
+
+
+
+
+
+
+/*===================  slider css =============== */
+.slider-section {
+    width: 100%;
+    height: auto;
+    color: #fff;
+    background-color: #272932;
+    padding:4vw 10vw 4vw 8vw ;
+}
+
+.heading-section {
+    text-align: center;
+    padding: 0vw 8vw 2vw 8vw;
+}
+
+.slider-section h1 {
+    font-weight: 700;
+    font-size:2vw;
+    color: #F5E2C8;
+
+}
+
+
+
+.flexible_item2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.card {
+    border: 2px solid #1f3c6e;
+    background-color: #1c2636;
+    border-radius: 10px;
+    height: 300px;
+    max-width: 350px;
+    margin-left: 15px;
+    margin-bottom:2vw;
+    
+}
+
+.card img,
+.card h2,
+.card p {
+    padding-top: 10px;
+    margin-left: 20px;
+}
+
+.card p {
+    max-width: 300px;
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 30px;
+}
+
+.btn-sec .btn{
+   
+    font-size:1.8vw;
+    padding: 1vw 2vw;
+    border: none;
+    border-radius:10px;
+    background-color: #d94f29;
+    color: #FFFF;
+    /* margin-top:3vw; */
+    margin-left: 1vw;
+}
+
+.arrowbtns{
+    position: absolute;
+    right:135px;
+    /* margin-top:3vw; */
+    cursor: pointer;
+}
+
+.arrowbtns img{
+    margin-left:20px;
+}
+
+@media (max-width:600px) {
+
+
+    .slider-section {
+    
+        overflow: hidden;
+    }
+
+    .arrowbtns
+    {
+        display: none;
+    }
+
+    .slider-section h1 {
+        font-size: 4vw;
+    }
+
+    .flexible-item {
+        display: none;
+    }
+
+    .flexible_item2 {
+        display: block;
+    }
+    
+ 
+
+    .btn-sec .btn{
+   
+        font-size:6vw;
+        margin-left:15px;
+    }
+}
+/*===================  slider css =============== */
+
+
+
+
+
+/*================= closer css ============= */
+
+.closer-section
+{
+height: auto;
+width: 100%;
+padding:4vw 10vw 4vw 8vw ;
+}
+
+
+
+.closer-section_heading p
+{
+    text-align: end;
+    color: red;
+    text-decoration: underline;
+}
+
+.closer-section_img
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.card-1{
+    border: 1px solid #F5E2C8;
+    border-radius: 10px;
+    margin-top:1vw;
+}
+
+
+.card-1 p
+{ 
+    padding-top: 20px;
+    margin-left: 20px;
+    max-width: 300px;
+    font-size: 18px;
+    line-height: 20px;
+    padding-bottom: 30px;
+    color: #272932;;
+}
+
+.card-1 img
+{
+    width: 330px;
+}
+
+
+.card-1 button
+{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    height: 50px;
+    width: 170px;
+    color: red;
+    border: 1px solid red;
+   font-size: 16px;
+   border-radius: 10px;
+   background-color: #fff;
+}
+
+/*================= closer css ============= */
+
+/*========== slider second css ==============  */
+.kirana-section
+{
+
+width: 100%;
+height: auto;
+padding:4vw 10vw 4vw 10vw ;
+/* background-color: #272932; */
+}
+
+
+.card-2{  
+    /* margin-top: 80px; */
+    border: 2px solid #F5E2C8;
+    border-radius: 10px;
+    width: 340px;
+    background-color: #f3ebdf;
+}
+
+.card-2 p{
+    padding-top: 30px;
+    margin-left: 20px;
+    padding-bottom: 40px;
+    width: 250px;
+    font-size: 18px;
+}
+
+.marketing{
+    display: flex;
+    gap: 10px;
+}
+
+.marketing h4{
+    padding-top:10px;
+}
+
+.marketing img{
+margin-left: 20px;
+width: 60px;
+height: 60px;
+}
+
+.marketing p{
+    padding-top: 35px !important;
+    margin-left: -159px;
+    font-size: 11px;
+    color: gray;
+ }
+
+
+/* slider second css  end */
+ 
+/* ================ about css =========== */
+ .about-section{
+    height: auto;
+    width: 100%;
+    /* background-color: #ac502e; */
+    display: flex;
+    
+}
+.about-section p 
+{
+    color: #808080;
+}
+
+.about-section .icon
+{
+    gap: 1vw;
+    display: flex;
+}
+
+.about-img
+{
+    height:auto;
+    width: 50%;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+
+.about-image
+{
+    height:400px;
+    width: 280px;
+    background-image: url(../img/about.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.about_text
+{
+    height:auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    font-size:1.6vw;
+    font-weight: 400;
+    line-height:2.1vw;
+    text-align:justify;
+    padding-right:15vw;
+    padding-top:3vw;
+    color: #808080;
+
+
+}
+
+.discuss-section{
+    height:auto;
+    width: 100%;
+    background-color: #FFF5F2;
+    margin-top: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5vw;
+    font-weight: bold;
+}
+.discuss-section .btn{
+    font-size:1.8vw;
+    padding: 1vw 2vw;
+    border: none;
+    border-radius:10px;
+    background-color: #d94f29;
+    color: #FFFF;
+    margin-top:3vw;
+} 
+
+@media (max-width:600px) {
+
+    .about-section
+    {
+        display: block;
+    }
+    .about-img
+    {
+        height:auto;
+        width: 100%;
+      
+    }
+ 
+    .about_text
+{
+    height:auto;
+    width: 100%;
+    font-size:4vw;
+    font-weight: 400;
+    display: flex;
+    text-align:justify;
+    padding: 5vw;
+    line-height:6vw;
+}
+
+.discuss-section .btn{
+    font-size:6vw;
+   
+}
+}
+/*================== about css ens ============== */
+
+
+
+/*================= footer css ================== */
+.footer-section{
+    height: auto;
+    width: 100%;
+    background-color: #272932;
+}
+.kirana-club{
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+    padding:6vw;
+}
+ .kirana-club p{
+
+    font-size: 14px;  
+    margin-top:2.5vw; 
+ }
+ .kirana-club ul li{
+    cursor: pointer;
+    list-style: none;
+    padding-bottom: 20px;
+    font-size: 17px;
+
+ }
+.logo img{
+    cursor: pointer;
+    max-width: 250px;
+}
+.image-flex img{
+    padding-left:1vw;
+}
+
+
+@media only screen and (max-width: 768px){
+   
+   
+   
+    .kirana-club{
+        display: block;
+       
+    }  
+    
+    .image-flex img{
+        padding-left:0vw;
+    }
+}
+ 
+
+/*================= footer css end  ================== */
+
+
+/*===================== club cs ================= */
+
+.clud-section
+{
+    height:auto;
+    width: 100%;
+    background-color:#272932;
+
+}
+
+.club-heading
+{
+display: flex;
+justify-content: center;
+padding:5vw 10vw 5vw 10vw;
+font-size:1.8vw;
+text-align: center;
+color: wheat;
+}
+
+
+.inside_section
+{
+    
+    height:100%;
+    width: 100%;
+    /* background-color: blueviolet; */
+    display: flex;
+    align-items: center;
+    
+    padding-bottom:5vw;
+
+}
+
+.inside_img
+{   
+    
+    height:350px;
+    width:100%;
+    background-image: url(../img/club.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    /* background-color: #808080; */
+
+}
+
+
+.inside_text
+{   
+    
+    height:100%;
+    width:100%;
+    /* background-color: #03dd36; */
+    padding-left:2vw ;
+    font-size:2vw;
+}
+
+
+.inside_text p 
+{
+    
+        margin-top: -35px;
+        padding-left: 40px;
+        margin-bottom: 25px;
+        color:wheat;
+    
+}
+
+input{
+    width: 500px;
+    height: 60px;
+    border-radius: 10px;
+    padding-left: 20px;
+    border: none;
+}
+.subscribe{
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    background-color: #D94F29;
+    color: #fff;
+    margin-left: -155px;
+    font-size: 17px;
+}
+
+
+
+@media only screen and (max-width: 768px){
+   
+
+    .clud-section
+    {
+       
+        margin-top:10px;
+    
+    }
+
+
+    .inside_section
+    {
+        
+        display: block;
+        padding:4.5vw;
+        
+    
+    }
+    
+    
+.inside_img
+{   
+    height: 250px;
+
+}
+   
+
+.inside_text
+{   
+       margin-top:10px;
+       padding: 2vw;
+    
+}
+
+.inside_text p 
+{
+    
+        margin-top: -28px;
+        padding-left: 40px;
+        margin-bottom: 25px;
+        color: #fff;
+        font-size:15px;
+    
+}
+
+.club-heading
+{
+
+    font-size: 4vw;
+}
+
+    
+.input{
+    
+    width: 100%;
+    
+}
+
+.subscribe{
+    margin-top: 20px;
+    margin-left: 0px;
+    width: 100%;
+
+}
+
+}
+
+
+/* club css end  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
