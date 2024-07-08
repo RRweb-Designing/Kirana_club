@@ -14,8 +14,8 @@ const About = () => {
        <h2>Anshul Gupta</h2>
        <p>Founder & CEO of kirana Club</p>
        <div className='icon'>
-           <img src={x} />
-           <img src={linkedin} />
+           <img src={x}  alt='img' />
+           <img src={linkedin} alt='img' />
     </div>
        </div>
        <div className='about_text'>
