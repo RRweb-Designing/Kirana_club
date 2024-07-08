@@ -1,30 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Nav from './componants/navbar';
-import Baner from './componants/baner';
-import Adds from './componants/adds';
-import Rate from './componants/rate';
-import CarouselSlider from './componants/slider';
-import Closer from './componants/closer';
-import Slider2 from './componants/slider2';
-import About from './componants/about';
-import Footer from './componants/footer';
-import Club from './componants/club';
+import App from './componants/app';
+import 'animate.css';
+
+
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Nav/>
-    <Baner/>
-    <Adds/>
-    <Rate/>
-    <CarouselSlider/>
-    <Closer/>
-    <Slider2/>
-    <Club/>
-    <About/>
-    <Footer/>
    
+   
+
+<App/>
+
+    
   
   </React.StrictMode>
 );
